@@ -1,0 +1,5 @@
+defaults: &defaults
+    APP_TIMEZONE: UTC
+
+development:
+    <<: *defaults

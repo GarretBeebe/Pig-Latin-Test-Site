@@ -1,0 +1,15 @@
+<form name="contactInput" novalidate ng-submit="contactInput.$valid && submitMessage()">
+  <div>Name *</div>
+  <input class="name-input" type="text" ng-model="message.first_name" ng-minlength="3" placeholder="First Name" required>
+  <input class="name-input" type="text" ng-model="message.last_name"  ng-minlength="3" placeholder="Last Name" required>
+  <div>Email *</div>
+  <input type="email" ng-model="message.email" required>
+  <div>Non-Profit Involvement *</div>
+  <input type="text" ng-model="message.affiliation" ng-minlength="3" required>
+  <div>Subject *</div>
+  <input type="text" ng-model="message.subject" ng-minlength="3" required>
+  <div>Message *</div>
+  <input type="text" ng-model="message.content" ng-minlength="3" required>
+  <br>
+  <button type="submit">Submit</button>
+</form>

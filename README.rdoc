@@ -1,0 +1,81 @@
+== README
+
+To setup:
+
+* Install PostgresDB
+
+* Install Virtual Box
+
+* Clone the PigLatinSite repo to your machine
+
+* Enter your project directory.
+
+* Install vagrant.
+
+* Add your public key to the vagrant folder.
+
+* Create an append_authorized_keys file within the vagrant folder and add your public key to that file.
+
+* Run:
+
+    librarian-chef install
+
+* Once chef is complete, run:
+
+    vagrant up
+
+* To SSH into your VM, run:
+
+    vagrant ssh
+
+* Once inside your vm, run:
+
+    cd /srv/PigLatinSite
+
+* Run:
+
+    bundle
+
+* Create config/dotenv/.env by adding your db credentials.
+
+    DEVELOPMENT_HOST=YOUR_HOST_IP
+    DEVELOPMENT_DATABASE=pig_latin_dev
+    DEVELOPMENT_DB_USERNAME=YOUR_DB_USER
+    DEVELOPMENT_DB_PASSWORD=YOUR_DB_USER_PASSWORD
+    DEVELOPMENT_SECRET_TOKEN=GET_SECRET_TOKEN
+
+* Create config/dotenv/.env.test by adding the following:
+
+    TEST_HOST=YOUR_HOST_IP
+    TEST_DATABASE=pig_latin_test
+    TEST_DB_USERNAME=YOUR_DB_USER
+    TEST_DB_PASSWORD=YOUR_DB_USER_PASSWORD
+    TEST_SECRET_TOKEN=GET_SECRET_TOKEN
+
+* Run:
+
+    rake db:create
+
+* To start server run:
+
+    rails s -p 8080
+
+Notes:
+
+* This project follows a file structure we developed on previous projects. If you do not need a particular folder for your project, feel free to trim back the structure.
+
+* This project contains a minified d3 build as well as moment.js. These can be found in vendor/assets/javascripts.
+
+* This project comes with prepopulated jshint, rubocop, and reek rules.
+
+* Capybara is used for feature testing. This project comes with a preconfigured capybara helper found in spec/support.
+
+* Poltergeist is our prefered javascript driver. The capybara helper and the spec helper are configured to use it. These files can be found in the spec and spec/support folders respectively.
+
+* Karma is installed during the provisioning process. Phantomjs is the prefered browser for testing. Karma is configured with the karma.conf.js file located within spec/karma folder.
+
+* For testing, a database cleaner helper is included in spec/support. The developer can modify the DB cleaning strategy for testing from this file.
+
+* Once development begins, remove jshint ignore comments from the coalition.js module in app/assets/javascripts/modules
+
+* Out of the box, rake should be green (currently karma fails, but it fails due to a lack of tests).

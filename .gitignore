@@ -1,0 +1,44 @@
+## Filetypes && files
+*.csv
+*.rbc
+**.orig
+**/.DS_Store
+.env
+.env.*
+
+capybara-*.html
+pickle-email-*.html
+rerun.txt
+.DS_Store
+
+config/dotenv/.env.*
+config/initializers/secret_token.rb
+db/*.sqlite3
+vagrant/*.pub
+vagrant/append_authorized_keys
+vagrant/deploy_key*
+
+## Folders
+.vagrant/
+cookbooks/
+coverage/
+log
+public/coverage
+public/assets/source_maps
+public/system
+spec/tmp
+tmp
+
+## Environment normalisation:
+.bundle
+vendor/bundle
+
+## These should all be checked in to normalise the environment:
+## Gemfile.lock, .ruby-version, .ruby-gemset
+
+## Unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+## Node files
+node_modules
+npm-debug.log

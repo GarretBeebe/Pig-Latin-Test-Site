@@ -1,0 +1,12 @@
+@import 'global.css.scss';
+
+header {
+  height:57px;
+  border-bottom:1px solid #DCDCDC;
+  text-align: right;
+
+  div.header-control {
+    display: inline-block;
+    margin: 0 1em 0 1em;
+  }
+}

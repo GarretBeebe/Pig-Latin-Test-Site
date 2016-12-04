@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  host: 10.0.2.2
+  pool: 200
+  port: 5432
+  database: <%= ENV['DEVELOPMENT_DATABASE'] %>
+  username: <%= ENV['DEVELOPMENT_DB_USERNAME'] %>
+  password: <%= ENV['DEVELOPMENT_DB_PASSWORD'] %>
+
+test:
+  adapter: postgresql
+  host: 10.0.2.2
+  pool: 200
+  port: 5432
+  database: <%= ENV['TEST_DATABASE'] %>
+  username: <%= ENV['TEST_DB_USERNAME'] %>
+  password: <%= ENV['TEST_DB_PASSWORD'] %>

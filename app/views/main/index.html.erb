@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>English to Pig Latin Converter</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-app='PigLatin' ng-controller='MainCtrl as main'>
+  <main>
+      <div>Enter your phrase.</div>
+      <input class="phrase-input" type="text" ng-model="phrase" ng-minlength="1" placeholder="English Phrase" required>
+      <button type="submit" class="js-input" ng-click="pigmejs()">Pig Me With JS</button>
+      <button type="submit" class="ruby-input" ng-click="pigmerb()">Pig Me With Ruby</button>
+
+    </form>
+  </main>
+  <footer>
+    <div class="copyright">Copyright &copy; <%= Time.now.year %></div>
+  </footer>
+</body>
+</html>

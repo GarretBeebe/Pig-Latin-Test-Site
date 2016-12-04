@@ -1,0 +1,37 @@
+AllCops:
+  Exclude:
+    - 'config/**/*'
+    - 'cookbooks/**/*'
+    - 'db/**/*'
+    - 'db_oracle/**/*'
+    - 'frontend/**/*'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'lib/tasks'
+    - 'tmp/**/*'
+    - 'vagrant/**/*'
+    - 'Vagrantfile'
+    - 'vendor/**/*'
+    - 'nagios/**/*'
+    - 'lib/tasks/**/*'
+    - 'bin/**/*'
+    - 'spec/**/*'
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+LineLength:
+  Max: 120
+
+MethodLength:
+  Enabled: false
+
+EndOfLine:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+Documentation:
+  Enabled: false
