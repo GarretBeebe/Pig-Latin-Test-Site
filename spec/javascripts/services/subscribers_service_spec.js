@@ -1,14 +1,14 @@
 'use strict';
 
-describe('Subscribers Service', function () {
-  var SubscribersService;
+describe('Pig Latin Service', function () {
+  var PigLatinService;
 
-  beforeEach(module('Coalition'));
-  beforeEach(inject(function (_SubscribersService_) {
-    SubscribersService = _SubscribersService_;
+  beforeEach(module('PigLatin'));
+  beforeEach(inject(function (_PigLatinService_) {
+    PigLatinService = _PigLatinService_;
   }));
 
   it('should be defined', function () {
-    expect(SubscribersService).toBeDefined();
+    expect(PigLatinService).toBeDefined();
   });
 });

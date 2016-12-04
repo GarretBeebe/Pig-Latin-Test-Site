@@ -10,10 +10,13 @@
 </head>
 <body ng-app='PigLatin' ng-controller='MainCtrl as main'>
   <main>
-      <div>Enter your phrase.</div>
-      <input class="phrase-input" type="text" ng-model="phrase" ng-minlength="1" placeholder="English Phrase" required>
-      <button type="submit" class="js-input" ng-click="pigmejs()">Pig Me With JS</button>
-      <button type="submit" class="ruby-input" ng-click="pigmerb()">Pig Me With Ruby</button>
+      <div>Enter your phrase then select which language you would like to use for the conversion.</div>
+      <div>Choosing ruby will persist your original phrase as well as its pig latin conversion.</div>
+      <textarea class="phrase-input" rows="4" cols="50" ng-model="phrase" placeholder="English Phrase"></textarea>
+      <textarea class="phrase-output" rows="4" cols="50" ng-model="pigPhrase" placeholder="Pig Latin Phrase"></textarea>
+      <br>
+      <button type="submit" class="js-input" ng-click="pigMeJS()">Pig Me With JS</button>
+      <button type="submit" class="ruby-input" ng-click="pigMeRB()">Pig Me With Ruby</button>
 
     </form>
   </main>

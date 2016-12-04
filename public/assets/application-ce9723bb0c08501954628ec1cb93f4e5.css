@@ -1,0 +1,120 @@
+/* line 6, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+body {
+  color: #212121;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 1280px;
+}
+
+/* line 14, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 18, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 23, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+main {
+  height: 100%;
+  padding-top: 26px;
+  text-align: center;
+}
+
+/* line 34, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+.no-glow {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 41, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* line 6, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+body {
+  color: #212121;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 1280px;
+}
+
+/* line 14, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 18, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 23, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+main {
+  height: 100%;
+  padding-top: 26px;
+  text-align: center;
+}
+
+/* line 34, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+.no-glow {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 41, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/global.css.scss */
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 3, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/header.css.scss */
+header {
+  height: 57px;
+  border-bottom: 1px solid #DCDCDC;
+  text-align: right;
+}
+/* line 8, /mnt/c/tools/cygwin/home/aztec/Code/My Code/Pig Latin Test Site/app/assets/stylesheets/main/header.css.scss */
+header div.header-control {
+  display: inline-block;
+  margin: 0 1em 0 1em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

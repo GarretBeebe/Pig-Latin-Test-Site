@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'main#index'
-  mount CoalitionPlatform::API => "/api"
+  mount PigPlatform::API => "/api"
 end

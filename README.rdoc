@@ -2,6 +2,8 @@
 
 To setup:
 
+* Install ruby 2.2.1
+
 * Install PostgresDB
 
 * Install Virtual Box
@@ -38,7 +40,7 @@ To setup:
 
 * Create config/dotenv/.env by adding your db credentials.
 
-    DEVELOPMENT_HOST=YOUR_HOST_IP
+    DEVELOPMENT_HOST=10.0.2.2
     DEVELOPMENT_DATABASE=pig_latin_dev
     DEVELOPMENT_DB_USERNAME=YOUR_DB_USER
     DEVELOPMENT_DB_PASSWORD=YOUR_DB_USER_PASSWORD
@@ -46,7 +48,7 @@ To setup:
 
 * Create config/dotenv/.env.test by adding the following:
 
-    TEST_HOST=YOUR_HOST_IP
+    TEST_HOST=10.0.2.2
     TEST_DATABASE=pig_latin_test
     TEST_DB_USERNAME=YOUR_DB_USER
     TEST_DB_PASSWORD=YOUR_DB_USER_PASSWORD
@@ -54,28 +56,8 @@ To setup:
 
 * Run:
 
-    rake db:create
+    rake db:create db:migrate db:seed
 
 * To start server run:
 
     rails s -p 8080
-
-Notes:
-
-* This project follows a file structure we developed on previous projects. If you do not need a particular folder for your project, feel free to trim back the structure.
-
-* This project contains a minified d3 build as well as moment.js. These can be found in vendor/assets/javascripts.
-
-* This project comes with prepopulated jshint, rubocop, and reek rules.
-
-* Capybara is used for feature testing. This project comes with a preconfigured capybara helper found in spec/support.
-
-* Poltergeist is our prefered javascript driver. The capybara helper and the spec helper are configured to use it. These files can be found in the spec and spec/support folders respectively.
-
-* Karma is installed during the provisioning process. Phantomjs is the prefered browser for testing. Karma is configured with the karma.conf.js file located within spec/karma folder.
-
-* For testing, a database cleaner helper is included in spec/support. The developer can modify the DB cleaning strategy for testing from this file.
-
-* Once development begins, remove jshint ignore comments from the coalition.js module in app/assets/javascripts/modules
-
-* Out of the box, rake should be green (currently karma fails, but it fails due to a lack of tests).

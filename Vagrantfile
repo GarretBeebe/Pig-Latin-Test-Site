@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network "forwarded_port", guest: guest, host: host
   end
 
-  config.vm.synced_folder ".", "/srv/1533Coalition"
+  config.vm.synced_folder ".", "/srv/PigLatin"
 
   config.vm.provider "virtualbox" do |vb|
     # Don't boot with headless mode

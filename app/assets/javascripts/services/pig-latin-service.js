@@ -6,7 +6,7 @@ angular.module('PigLatin').service('PigLatinService', [
     return $resource('/api/piglatin', {}, {
       get: {
         method:'get',
-        params {
+        params: {
           phrase: '@phrase'
         }
       }
