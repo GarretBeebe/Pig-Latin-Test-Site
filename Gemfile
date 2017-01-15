@@ -11,27 +11,23 @@ gem 'rails', '4.2.6' # MIT License
 # Postgres support
 gem 'pg' # Ruby License
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'underscore-rails'          # MIT License
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# JS runtime
 gem 'therubyracer',  platforms: :ruby # MIT License
 
-# Use jquery as the JavaScript library
+# JS frameworks and tools
 gem 'jquery-rails' # MIT License
+gem 'underscore-rails'          # MIT License
 
-gem 'angular-ui-bootstrap-rails', '0.13.3'
-
-gem 'savon' # MIT License
-
+# Browser detection
 gem 'browser'
 
+# Rails Angular assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-angular', '1.3.15'                    # MIT License
-  gem 'rails-assets-angular-animate', '1.3.15'            # MIT License
-  gem 'rails-assets-angular-route', '1.3.15'              # MIT License
-  gem 'rails-assets-angular-resource', '1.3.15'           # MIT License
-  gem 'rails-assets-angular-sanitize', '1.3.15'           # MIT License
+  gem 'rails-assets-angular', '1.5.8'                    # MIT License
+  gem 'rails-assets-angular-animate', '1.5.8'            # MIT License
+  gem 'rails-assets-angular-route', '1.5.8'              # MIT License
+  gem 'rails-assets-angular-resource', '1.5.8'           # MIT License
+  gem 'rails-assets-angular-sanitize', '1.5.8'           # MIT License
 
   group :development, :test do
     gem 'rails-assets-angular-mocks'
@@ -42,37 +38,19 @@ end
 gem 'grape', :git => "https://github.com/intridea/grape.git"  # MIT License
 gem 'grape-active_model_serializers'                          # MIT License
 
-# SSO Support for windows
-gem 'ntlm-sso' # MIT License
-
 # Automated capistrano slack notifications
 gem 'slackistrano' # MIT License
-
-# For cache warming
-gem 'faraday'               # MIT License
-gem 'faraday-cookie_jar'    # MIT License
-gem 'faraday-request-timer' # MIT License
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0' # MIT License
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc # MIT License
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-#gem 'spring',        group: :development
-
 # Add gems for authentication/authorization
 gem "devise", ">=3.0"               # MIT License
 gem "devise_ldap_authenticatable"   # MIT License
 gem 'cancancan', '~> 1.9'           # MIT License
 gem 'devise-token_authenticatable'  # MIT License
-
-gem "rufus-scheduler", "2.0.24"   # MIT License
-gem "resque"                      # MIT License
-gem 'resque-scheduler', "~> 3.0"  # MIT License
-
-# ActiveAdmin
-# gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git', ref: '36edd084f277f21900a768a0384196b57d2931ee' # MIT/BSD License
 
 # Rails Admin
 gem 'rails_admin' # MIT License
@@ -94,10 +72,6 @@ group :assets do
    gem 'uglifier', '>= 1.0.3' # MIT License
    gem 'yui-compressor'       # BSD License
 end
-
-# caching with memcached
-gem 'dalli' # MIT-like license
-gem 'connection_pool' # MIT License
 
 gem 'certified' # MIT License
 
