@@ -37,7 +37,6 @@ To setup:
 * Run:
 
     sudo gem install bundler
-
     bundle
 
 * Create config/dotenv/.env by adding your db credentials.
