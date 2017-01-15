@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('PigLatin', [
+  'ngAnimate',
   'ngResource',
-  'ngSanitize',
-  'ui.bootstrap'
+  'ngSanitize'
 ]);
 
 // remove the jshint ignore once you begin writing new code

@@ -39,8 +39,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Use a different cache store in production.
-  config.cache_store = :dalli_store, "localhost:11211", {compress: true, value_max_bytes: 64 * 1024 * 1024, pool_size: 5}
-  # config.cache_store = :null_store
+  config.cache_store = :null_store
 
   config.assets.paths << "#{Rails.root}/spec/karma"
 end
