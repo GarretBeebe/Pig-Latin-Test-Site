@@ -14,6 +14,8 @@ rerun.txt
 config/dotenv/.env.*
 config/initializers/secret_token.rb
 db/*.sqlite3
+puma.pid
+puma.state
 vagrant/*.pub
 vagrant/append_authorized_keys
 vagrant/deploy_key*
