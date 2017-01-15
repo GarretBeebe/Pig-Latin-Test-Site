@@ -36,6 +36,8 @@ To setup:
 
 * Run:
 
+    sudo gem install bundler
+
     bundle
 
 * Create config/dotenv/.env by adding your db credentials.
@@ -61,3 +63,5 @@ To setup:
 * To start server run:
 
     rails s -p 8080
+    or for https
+    bundle exec puma -C config/puma.rb

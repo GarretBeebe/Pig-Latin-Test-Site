@@ -1,10 +1,12 @@
 source 'http://rubygems.org'
 
+ruby '2.3.1'
+
 # Must be at top for ENV variables to flow down into other gems
 gem 'dotenv'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6' # MIT License
+gem 'rails', '4.2.6' # MIT License
 
 # Postgres support
 gem 'pg' # Ruby License
